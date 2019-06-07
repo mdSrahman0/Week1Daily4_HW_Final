@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:text="Hello World!" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:background="drawable/shape"
+            android:text="C"
+            android:id="@+id/btClear"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="DEL"
+            android:id="@+id/btDelete"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="/"
+            android:id="@+id/btDivide"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="*"
+            android:id="@+id/btMult"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="7"
+            android:id="@+id/btSeven"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="8"
+            android:id="@+id/btEight"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="9"
+            android:id="@+id/btNine"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="-"
+            android:id="@+id/btSub"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="4"
+            android:id="@+id/btFour"
+            />
+        <Button
+            android:background="drawable/shape"
+            android:text="5"
+            android:id="@+id/btFive"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="6"
+            android:id="@+id/btSix" />
+
+        <Button
+            android:background="drawable/shape"
+            android:text="+"
+            android:id="@+id/btAdd"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="1"
+            android:id="@+id/btOne"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="2"
+            android:id="@+id/btTwo" />
+
+        <Button
+            android:background="drawable/shape"
+            android:text="3"
+            android:id="@+id/btThree" />
+        <Button
+            android:background="drawable/shape"
+            android:layout_gravity="fill_vertical"
+            android:layout_rowSpan="2"
+            android:text="="
+            android:id="@+id/btEqual" />
+
+        <Button
+            android:background="drawable/shape"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="2"
+            android:text="0"
+            android:id="@+id/btZero" />
+        <Button
+            android:background="drawable/shape"
+            android:text="."
+            android:id="@+id/btDecimal" />
+
+    </GridLayout>
+
+</RelativeLayout>
